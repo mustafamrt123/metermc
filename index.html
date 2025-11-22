@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter - Minecraft Sunucusu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="server-info">
+                    <button class="copy-btn-large" onclick="copyServerIp()">
+                        <i class="fas fa-copy"></i>
+                        Etkinlik Sunucusunun IP'sini Kopyala
+                    </button>
+                    <span id="serverIp" style="display: none;">51.79.96.45:27129</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="meter-logo-text">METER</div>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="active">Anasayfa</a></li>
+                </ul>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Etkinlik Sunucusu</div>
+                <h1 class="hero-title">METER</h1>
+                <div class="social-links">
+                    <a href="https://discord.gg/2hqK83Wwn9" target="_blank" class="social-icon" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://kick.com/metertwo" target="_blank" class="social-icon" title="Kick">
+                        <i class="fas fa-play-circle"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@KAFADAGIT" target="_blank" class="social-icon" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section" id="events">
+        <div class="container">
+            <h2 class="section-title">Etkinlikler</h2>
+            <div class="events-grid">
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="images/sa.png" alt="Minecraft Squid Game Etkinliği">
+                    </div>
+                    <div class="event-info">
+                        <h3>Etkinlik 1</h3>
+                        <p>Minecraft Squid Game Etkinliği</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x300/FF8C42/ffffff?text=ETKINLIK+2" alt="Etkinlik 2">
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x300/FFA366/ffffff?text=ETKINLIK+3" alt="Etkinlik 3">
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x300/FFB88C/ffffff?text=ETKINLIK+4" alt="Etkinlik 4">
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x300/FF6B35/ffffff?text=ETKINLIK+5" alt="Etkinlik 5">
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x300/FF8C42/ffffff?text=ETKINLIK+6" alt="Etkinlik 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title">Haberler & Duyurular</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x200/FF6B35/ffffff?text=YENI+SEZON" alt="Yeni Sezon">
+                    </div>
+                    <div class="news-content">
+                        <h3>METER 3. YILA YENİ SEZONLA GİRİYOR</h3>
+                        <p class="news-date">
+                            <i class="fas fa-calendar"></i>
+                            29 May 2025 23:50
+                        </p>
+                        <p class="news-excerpt">Yeni sezonda birçok yenilik ve sürpriz sizleri bekliyor. Detaylar için devamını okuyun...</p>
+                        <a href="#" class="news-read-more">Devamını Oku</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x200/FF8C42/ffffff?text=YENI+YIL" alt="Yeni Yıl">
+                    </div>
+                    <div class="news-content">
+                        <h3>MUTLU YILLAR METER!</h3>
+                        <p class="news-date">
+                            <i class="fas fa-calendar"></i>
+                            18 Ara 2024 16:29
+                        </p>
+                        <p class="news-excerpt">Yeni yılın sana ve sevdiklerine bol bol mutluluk ve huzur getirmesi dileğiyle....</p>
+                        <a href="#" class="news-read-more">Devamını Oku</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">Hakkımızda</h2>
+            <p class="about-text">
+                Övünmek gibi olmasın ama tekrar hoşgeldiniz burası METER!
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Hızlı Menü</h4>
+                    <ul>
+                        <li><a href="#home">Anasayfa</a></li>
+                        <li><a href="#events">Etkinlikler</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sosyal Medya</h4>
+                    <div class="footer-social-links">
+                        <a href="https://discord.gg/2hqK83Wwn9" target="_blank" class="footer-social-icon" title="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://kick.com/metertwo" target="_blank" class="footer-social-icon" title="Kick">
+                            <i class="fas fa-play-circle"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@KAFADAGIT" target="_blank" class="footer-social-icon" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Bağlantılar</h4>
+                    <ul>
+                        <li><a href="#rules">Kurallar</a></li>
+                        <li><a href="#terms">Hizmet Şartları</a></li>
+                        <li><a href="#privacy">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Meter</p>
+                <p class="footer-disclaimer">
+                    We are in no way affiliated with or endorsed by Mojang.
+                </p>
+                <p class="footer-credits">
+                    Designed by ColdFire | Powered by <strong>LeaderOS</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
